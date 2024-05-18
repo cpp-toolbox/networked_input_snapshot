@@ -6,8 +6,8 @@
 class NetworkedInputSnapshot {
   public:
     uint64_t client_id;
-    bool processed_by_client = false;
-    int client_input_history_insertion_time_epoch_ms = -1;
+    // this is guarenteed to be not -1 when received on the server.
+    uint64_t client_input_history_insertion_time_epoch_ms = -1;
     bool left_pressed = false;
     bool right_pressed = false;
     bool forward_pressed = false;

@@ -1,6 +1,6 @@
 #include "networked_input_snapshot.hpp"
 
-std::ostream &operator<<(std::ostream &os, const InputSnapshot &snapshot) {
+std::ostream &operator<<(std::ostream &os, const NetworkedInputSnapshot &snapshot) {
     os << "Client ID: " << snapshot.client_id << ", "
        << "client input history insertion time epoch ms: " << snapshot.client_input_history_insertion_time_epoch_ms
        << ", "
