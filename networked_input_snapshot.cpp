@@ -2,6 +2,8 @@
 
 std::ostream &operator<<(std::ostream &os, const InputSnapshot &snapshot) {
     os << "Client ID: " << snapshot.client_id << ", "
+       << "client input history insertion time epoch ms: " << snapshot.client_input_history_insertion_time_epoch_ms
+       << ", "
        << "Left pressed: " << snapshot.left_pressed << ", "
        << "Right pressed: " << snapshot.right_pressed << ", "
        << "Forward pressed: " << snapshot.forward_pressed << ", "
