@@ -17,6 +17,4 @@ class NetworkedInputSnapshot {
     double mouse_position_x = 0.0, mouse_position_y = 0.0;
 };
 
-std::ostream &operator<<(std::ostream &os, const NetworkedInputSnapshot &snapshot);
-
 #endif // NETWORKED_INPUT_SNAPSHOT_HPP
