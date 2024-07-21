@@ -3,8 +3,9 @@
 
 #include <cstdint>
 #include <ostream>
+
 class NetworkedInputSnapshot {
-  public:
+public:
     uint64_t client_id;
     // these are guarenteed to be not -1 when received on the server.
     uint64_t client_input_history_insertion_time_epoch_ms = -1;
