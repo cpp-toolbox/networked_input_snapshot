@@ -20,6 +20,8 @@ class NetworkedInputSnapshot {
     // TODO eventually we will stream this instead of it being a one time event
     bool fire_just_pressed = false;
 
+    NetworkedInputSnapshot() {};
+
     // Constructor to initialize all member variables
     NetworkedInputSnapshot(uint64_t id, uint64_t history_time = static_cast<uint64_t>(-1), double delta_time = -1.0,
                            bool left = false, bool right = false, bool forward = false, bool backward = false,
